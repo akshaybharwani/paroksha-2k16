@@ -1,0 +1,190 @@
+{
+    "path": {
+        "css/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css",
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "compressed"
+            },
+            "bracketstoix.prefs": {
+                "version": {
+                    "value": "3.2"
+                },
+                "commands": {
+                    "value": {
+                        "showinmenu": [
+                            "uppercase",
+                            "lowercase",
+                            "capitalize",
+                            "camelcase",
+                            "htmlencode",
+                            "htmldecode",
+                            "urlencode",
+                            "join",
+                            "split",
+                            "number",
+                            "reverse",
+                            "trimleading",
+                            "trimtrailing",
+                            "markdowntrimtrailing",
+                            "sortascending",
+                            "sortdescending",
+                            "removeduplicates",
+                            "removeemptylines",
+                            "unixtowin",
+                            "wintounix",
+                            "singleslashtodouble",
+                            "doubletosingleslash",
+                            "singlequotetodouble",
+                            "doubletosinglequote",
+                            "togglequote",
+                            "tabtospace",
+                            "spacetotab",
+                            "rgb-hex",
+                            "untag",
+                            "tag",
+                            "breaklineat",
+                            "loremipsum",
+                            "functionjsdoc",
+                            "declarejslintglobal",
+                            "extractortoix",
+                            "replacetoix",
+                            "openurl",
+                            "websearch",
+                            "browsefile",
+                            "recentfiles",
+                            "copyfilename",
+                            "copyfullname",
+                            "regnize",
+                            "htmlreport",
+                            "compiler",
+                            "execute",
+                            "commands",
+                            "commandsmapper",
+                            "options",
+                            "help",
+                            "about"
+                        ],
+                        "showinctxmenu": [],
+                        "hotkeys": {}
+                    }
+                },
+                "splitMarker": {
+                    "value": ","
+                },
+                "splitMarkerExtr": {
+                    "value": "\\t"
+                },
+                "historySize": {
+                    "value": 20
+                },
+                "recentSize": {
+                    "value": 20
+                },
+                "showcxtedit": {
+                    "value": true
+                },
+                "recentFiles": {
+                    "files": []
+                },
+                "startNum": {
+                    "value": 1
+                },
+                "numSep": {
+                    "value": ".\\$",
+                    "history": []
+                },
+                "tabSize": {
+                    "value": 2
+                },
+                "findre": {
+                    "value": "",
+                    "history": []
+                },
+                "find": {
+                    "value": "",
+                    "history": []
+                },
+                "replace": {
+                    "value": "",
+                    "history": []
+                },
+                "startValue": {
+                    "value": "",
+                    "history": []
+                },
+                "stepValue": {
+                    "value": "",
+                    "history": []
+                },
+                "iswordsonly": {
+                    "value": false
+                },
+                "isregexpr": {
+                    "value": true
+                },
+                "isignorecase": {
+                    "value": false
+                },
+                "isimultiline": {
+                    "value": false
+                },
+                "isall": {
+                    "value": true
+                },
+                "isselonly": {
+                    "value": true
+                },
+                "webSearch": {
+                    "value": "https://www.google.com/search?q="
+                },
+                "js6": {
+                    "value": "traceur --out \"{{out}}\" --script \"{{in}}\"",
+                    "fields": {
+                        "autosave": {
+                            "value": false
+                        }
+                    }
+                },
+                "scss": {
+                    "value": "sass --sourcemap \"{{in}}\" \"{{out}}\"",
+                    "fields": {
+                        "autosave": {
+                            "value": true
+                        }
+                    }
+                },
+                "js": {
+                    "value": "uglifyjs \"{{in}}\" -o \"{{out}}\""
+                },
+                "linrparagraphs": {
+                    "value": "1"
+                },
+                "limaxcharsperline": {
+                    "value": "0"
+                },
+                "lihtmlparawrap": {
+                    "value": ""
+                },
+                "maxcharsperline": {
+                    "value": "80"
+                },
+                "tobreakwords": {
+                    "value": false
+                },
+                "beforesave": {
+                    "value": []
+                },
+                "aftersave": {
+                    "value": []
+                },
+                "tools": {
+                    "value": []
+                }
+            },
+            "noDistractions": true
+        }
+    }
+}

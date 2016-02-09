@@ -1,0 +1,220 @@
+@font-face {
+font-family: Axis;
+src: url("../fonts/Axis.otf") format("opentype");
+}
+
+@font-face {
+font-family: Bariol Regular;
+src: url("../fonts/Bariol_Regular.otf") format("opentype");
+}
+
+$main-font-family: Axis, sans-serif;
+
+$secondary-font-family: Bariol Regular, sans-serif;
+
+$background-color: #2B2E4A;
+$button-color: #53354A;
+$font-color: #E84545;
+$else-color: #903749;
+$link-hover-color: #df1c1c;
+
+div {
+	overflow: hidden;
+}
+
+@mixin main-title {
+	width: 200px;
+	height: 70px;
+	left: 0;
+	font-family: $main-font-family;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 35px;
+}
+
+@mixin main-page {
+	width: 100%;
+	height: 1000px;
+	display: flex;
+}
+
+
+body {
+	border: 20px white solid;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.page {
+	@include main-page;
+}
+
+#main-page1 {
+	
+	background-image: url(../images/sd7.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+	background-blend-mode: luminosity;
+	height: 100vh;
+
+	.social-icon {
+		width: 60px;
+		height: 60px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #3b5998;
+		z-index: 9999;
+		border: 5px solid white;
+		display: flex;
+		cursor: pointer;
+		
+		.social-icon-fa {
+			margin: auto;
+			color: white;
+		}
+	}
+	
+	#title1 {
+		@include main-title;
+		position: fixed;
+		background-color: $button-color;
+		top: 60px;
+		color: $font-color;
+		border: 5px solid white;
+		z-index: 9999;
+	}
+
+}
+
+.even-details {
+	width: 1000px;
+	min-width: auto;
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	display: flex;
+	flex-direction: column;
+		
+	.event-info {
+		width: 690px;
+		color: $font-color;
+		margin-left: 10px;
+		margin-bottom: -5px;
+		
+		.event-info-text {
+			text-align: center;
+			background-color: $background-color;
+			font-family: $secondary-font-family;
+			font-size: 23px;
+			margin: auto 0;
+			border: 5px solid $font-color;
+			border-radius: 50px;
+			margin-bottom: 7px;
+		}
+	}
+		
+	#event-name {
+		font-family: $main-font-family;
+		font-size: 160px;
+		color: $font-color;
+		line-height: 0.9;
+	}
+}
+
+.social-icon::hover {
+	background-color: white;
+	
+	i {
+		background-color: #3b5998;
+	}
+}
+
+#main-page2 {
+	background-color: blue;
+	height: auto;
+}
+
+.games-wrapper {
+	margin: auto;
+}
+
+.games {
+	max-width: 1160px;
+	margin: 40px auto;
+
+	.game {
+		width: auto;
+		height: auto;
+		background-color: white;
+		margin: 0 20px;
+		display: flex;
+		flex-direction: column;
+		
+		.game-name {
+			font-family: $main-font-family;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			font-size: 35px;
+			line-height: 1;
+			margin-top: 20px;
+			padding: 0 10px;
+		}
+	
+		.game-image {
+			display: flex;
+			margin: 20px auto;
+			
+			.game-image-icon {
+				margin: auto;
+				color: $font-color;
+				font-size: 10em;
+			}
+		}
+		
+		.game-link {
+			margin: auto;
+			padding-bottom: 20px;
+			font-family: $secondary-font-family;
+			font-size: 17px;
+		}
+	}
+}
+		
+.game-link:hover {
+	color: #df1c1c;
+}
+
+body::before {
+	background: white;
+	content: "";
+	display: block;
+	height: 21px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+}
+
+body::after {
+	background: white;
+	content: "";
+	display: block;
+	height: 21px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	bottom: 0;
+}

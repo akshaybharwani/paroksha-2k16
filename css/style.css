@@ -1,0 +1,160 @@
+@font-face {
+  font-family: Axis;
+  src: url("../fonts/Axis.otf") format("opentype"); }
+@font-face {
+  font-family: Bariol Regular;
+  src: url("../fonts/Bariol_Regular.otf") format("opentype"); }
+div {
+  overflow: hidden; }
+
+body {
+  border: 20px white solid;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  overflow: hidden; }
+
+.page {
+  width: 100%;
+  height: 1000px;
+  display: flex; }
+
+#main-page1 {
+  background-image: url(../images/sd7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-blend-mode: luminosity;
+  height: 100vh; }
+  #main-page1 .social-icon {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3b5998;
+    z-index: 9999;
+    border: 5px solid white;
+    display: flex;
+    cursor: pointer; }
+    #main-page1 .social-icon .social-icon-fa {
+      margin: auto;
+      color: white; }
+  #main-page1 #title1 {
+    width: 200px;
+    height: 70px;
+    left: 0;
+    font-family: Axis, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    position: fixed;
+    background-color: #53354A;
+    top: 60px;
+    color: #E84545;
+    border: 5px solid white;
+    z-index: 9999; }
+
+.even-details {
+  width: 1000px;
+  min-width: auto;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column; }
+  .even-details .event-info {
+    width: 690px;
+    color: #E84545;
+    margin-left: 10px;
+    margin-bottom: -5px; }
+    .even-details .event-info .event-info-text {
+      text-align: center;
+      background-color: #2B2E4A;
+      font-family: Bariol Regular, sans-serif;
+      font-size: 23px;
+      margin: auto 0;
+      border: 5px solid #E84545;
+      border-radius: 50px;
+      margin-bottom: 7px; }
+  .even-details #event-name {
+    font-family: Axis, sans-serif;
+    font-size: 160px;
+    color: #E84545;
+    line-height: 0.9; }
+
+.social-icon::hover {
+  background-color: white; }
+  .social-icon::hover i {
+    background-color: #3b5998; }
+
+#main-page2 {
+  background-color: blue;
+  height: auto; }
+
+.games-wrapper {
+  margin: auto; }
+
+.games {
+  max-width: 1160px;
+  margin: 40px auto; }
+  .games .game {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column; }
+    .games .game .game-name {
+      font-family: Axis, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-size: 35px;
+      line-height: 1;
+      margin-top: 20px;
+      padding: 0 10px; }
+    .games .game .game-image {
+      display: flex;
+      margin: 20px auto; }
+      .games .game .game-image .game-image-icon {
+        margin: auto;
+        color: #E84545;
+        font-size: 10em; }
+    .games .game .game-link {
+      margin: auto;
+      padding-bottom: 20px;
+      font-family: Bariol Regular, sans-serif;
+      font-size: 17px; }
+
+.game-link:hover {
+  color: #df1c1c; }
+
+body::before {
+  background: white;
+  content: "";
+  display: block;
+  height: 21px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0; }
+
+body::after {
+  background: white;
+  content: "";
+  display: block;
+  height: 21px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
