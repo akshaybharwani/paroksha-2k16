@@ -1,40 +1,34 @@
 <html>
 <head>
-	<link rel="stylesheet" href="../css/bulma.min.css">
-	
-	<style>
-		.first {
-			max-width: 1080px;
-			height: 40px;
-		}
-		
-		.second {
-			
-		}
-	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.min.css">
+	<link rel="stylesheet" href="../compare/compare.css">
 </head>
 <body>
-	<div class="first columns is-mobile">
-  <div class="second column is-half-mobile is-third-tablet is-quarter-desktop">
-    <p class="notification is-info">
-      <code>is-half-mobile</code><br>
-      <code>is-third-tablet</code><br>
-      <code>is-quarter-desktop</code>
-    </p>
-  </div>
-  <div class="second column">
-    <p class="notification is-success">1</p>
-  </div>
-  <div class="second column">
-    <p class="notification is-warning">1</p>
-  </div>
-  <div class="second column">
-    <p class="notification is-success">1</p>
-  </div>
-  <div class="second column">
-    <p class="notification is-warning">1</p>
-  </div>
-</div>
+	
+	<div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
+		<button class="menu-icon" type="button" data-toggle></button>
+		<div class="title-bar-title">Menu</div>
+	</div>
+	<div class="top-bar" id="realEstateMenu">
+		<div class="top-bar-left">
+		<ul class="menu" data-responsive-menu="accordion">
+		<li class="menu-text">Interplanetary</li>
+		<li><a href="#">One</a></li>
+		<li><a href="#">Two</a></li>
+		<li><a href="#">Three</a></li>
+		</ul>
+		</div>
+		<div class="top-bar-right">
+		<ul class="menu">
+		<li><a href="#">My Account</a></li>
+		<li><a class="button">Login</a></li>
+		</ul>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+	
 </body>
 </html>
 
