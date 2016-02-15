@@ -20,7 +20,6 @@ $link-hover-color: #3e2838;
 
 
 body {
-	border: 20px white solid;
 	margin: 0;
 	padding: 0;
 }
@@ -29,7 +28,6 @@ body::before {
 	background: white;
 	content: "";
 	display: block;
-	height: 21px;
 	left: 0;
 	position: fixed;
 	width: 100%;
@@ -41,7 +39,6 @@ body::after {
 	background: white;
 	content: "";
 	display: block;
-	height: 21px;
 	left: 0;
 	position: fixed;
 	width: 100%;
@@ -64,7 +61,7 @@ body::after {
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 		
 		.title {
-			padding: 10px;
+			padding: 5px;
 			font-family: $main-font-family;
 			font-size: 20px;
 			
@@ -81,7 +78,7 @@ body::after {
 	}
 	
 	.top-bar-title span {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 }
 
@@ -140,8 +137,20 @@ body::after {
 	
 }
 
-.row {
-	margin-top: 20px;
+.top-bar-title span::after {
+content: "";
+position: absolute;
+right: 0;
+display: block;
+width: 16px;
+top: 0;
+height: 0;
+-webkit-box-shadow: 1px 10px 1px 1px #202020, 1px 16px 1px 1px #202020, 1px 22px 1px 1px #202020;
+box-shadow: 0 10px 0 1px #202020, 0 16px 0 1px #202020, 0 22px 0 1px #202020;
+}
+
+.section-wrapper {
+	background-color: $else-color;
 }
 
 #events {
@@ -251,6 +260,19 @@ a:hover {
 					font-size: 25px;
 				}
 		  }
+		  
+		  body {
+			border: 5px white solid;
+			}
+			
+			body::before {
+				height: 5px;
+			}
+			
+			body::after {
+				height: 5px;
+			}
+		  
 }
       
       /* Medium and up */
@@ -265,6 +287,18 @@ a:hover {
 					font-size: 30px;
 				}
 		  }
+		  
+		  body {
+			border: 10px white solid;
+			}
+			
+			body::before {
+				height: 10px;
+			}
+			
+			body::after {
+				height: 10px;
+			}
 		  
 		  
 }
@@ -287,6 +321,18 @@ a:hover {
 				margin-left: -5px;
 		  	}
 		  
+		  
+		  	body {
+			border: 20px white solid;
+			}
+			
+			body::before {
+				height: 20px;
+			}
+			
+			body::after {
+				height: 20px;
+			}
 		  
 	}
       
