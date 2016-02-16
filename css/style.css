@@ -57,10 +57,12 @@ body::after {
     margin-bottom: 5px; }
 
 #home {
+  background: url(../images/sd7.jpg) no-repeat;
   background-size: cover;
-  background-image: url(../images/sd7.jpg);
+  background-position: center;
   background-color: #2B2E4A;
-  background-blend-mode: luminosity; }
+  background-blend-mode: luminosity;
+  overflow: hidden; }
   #home #social-icon {
     position: fixed;
     top: 0;
@@ -72,6 +74,10 @@ body::after {
     color: white; }
     #home #social-icon .social-icon-fa {
       margin: auto; }
+  #home video {
+    z-index: 100;
+    min-width: 100%;
+    min-height: 100%; }
 
 .section-row {
   margin-top: 20px; }
@@ -107,14 +113,17 @@ body::after {
     width: auto; }
     #events .events-row-event .events-row-wrapper {
       background-color: white;
-      max-height: 100%; }
+      display: flex;
+      flex-direction: column; }
       #events .events-row-event .events-row-wrapper .events-row-name {
-        text-align: center; }
+        text-align: center;
+        flex-grow: 1; }
         #events .events-row-event .events-row-wrapper .events-row-name .event-row-name-h3 {
           font-family: Axis, sans-serif;
           color: #E84545; }
       #events .events-row-event .events-row-wrapper .events-row-image {
-        text-align: center; }
+        text-align: center;
+        flex-grow: 1; }
       #events .events-row-event .events-row-wrapper .events-row-info {
         text-align: center;
         padding-bottom: 7px; }
@@ -210,8 +219,11 @@ body::after {
   .contact-name, .contact-number, .contact-role {
     font-size: 20px; }
 
-  .events-row {
+  .events-row:first-of-type {
     padding-top: 60px; }
+
+  .events-row-wrapper {
+    margin-bottom: 20px; }
 
   #about-row {
     padding-top: 60px; } }
@@ -235,7 +247,10 @@ body::after {
     height: 20px; }
 
   body::after {
-    height: 20px; } }
+    height: 20px; }
+
+  .events-row-wrapper {
+    height: 259px; } }
 /* Large only */
 
 /*# sourceMappingURL=style.css.map */
