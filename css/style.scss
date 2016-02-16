@@ -97,11 +97,12 @@ body::after {
 }
 
 #home {
-	
+	background: url(../images/sd7.jpg) no-repeat;
 	background-size: cover;
-	background-image: url(../images/sd7.jpg);
+	background-position: center;
 	background-color: $background-color;
 	background-blend-mode: luminosity;
+	overflow: hidden;
 	
 	#social-icon {
 		position: fixed;
@@ -117,6 +118,13 @@ body::after {
 			margin: auto;
 		}
 	}
+	
+	video {
+		z-index: 100;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	
 }
 
 .section-row {
@@ -167,10 +175,12 @@ body::after {
 		
 		.events-row-wrapper {
 			background-color: white;
-			max-height: 100%;
+			display: flex;
+			flex-direction: column;
 			
 			.events-row-name {
 				text-align: center;
+				flex-grow: 1;
 				
 				.event-row-name-h3 {
 					font-family: $main-font-family;
@@ -180,6 +190,7 @@ body::after {
 			
 			.events-row-image {
 				text-align: center;
+				flex-grow: 1;
 			}
 			
 			.events-row-info {
@@ -329,8 +340,12 @@ body::after {
 			  font-size: 20px;
 		  }
 		  
-		  .events-row {
+		  .events-row:first-of-type {
 			  padding-top: 60px;
+		  }
+		  
+		  .events-row-wrapper {
+			  margin-bottom: 20px;
 		  }
 		  
 		  #about-row {
@@ -369,6 +384,10 @@ body::after {
 			body::after {
 				height: 20px;
 			}
+		  
+		  	.events-row-wrapper {
+			  	height: 259px;
+		 	}
 		  
 	}
       
