@@ -2,17 +2,9 @@
 font-family: Axis;
 src: url("../fonts/Axis.otf") format("opentype");
 }
-
-@font-face {
-font-family: Bariol Regular;
-src: url("../fonts/Bariol_Regular.otf") format("opentype");
-}
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600italic);
 
-$main-font-family: Axis, sans-serif;
-
-$secondary-font-family: Bariol Regular, sans-serif;
+$main-font-family: 'Axis', sans-serif;
 
 $other-font: 'Open Sans', sans-serif;
 
@@ -58,8 +50,6 @@ body::after {
 .top-bar {
 	background-color: rgba(0,0,0,0);
 	text-align: center;
-		
-
 	
 	.top-bar-section .menu {
 		background-color: $font-color;
@@ -97,11 +87,6 @@ body::after {
 }
 
 #home {
-	background: url(../images/sd7.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-color: $background-color;
-	background-blend-mode: luminosity;
 	overflow: hidden;
 	
 	#social-icon {
@@ -119,10 +104,14 @@ body::after {
 		}
 	}
 	
+	#social-icon:hover, #social-icon:hover > .social-icon-fa {
+		color: #3b5998;
+		background-color: white;
+	}
+	
 	video {
-		z-index: 100;
-		min-width: 100%;
 		min-height: 100%;
+		min-width: 100%;
 	}
 	
 }
@@ -141,7 +130,6 @@ body::after {
 	#event-name {
 		text-align: left;
 		line-height: 1;
-		color: $font-color;
 	}	
 	
 	#event-name h1 {
@@ -151,7 +139,8 @@ body::after {
 	
 	.event-info h3 {
 		color: $font-color;
-		font-family: $secondary-font-family;
+		font-family: $other-font;
+		font-weight: 600;
 	}
 	
 	.event-info h3 span {
@@ -202,9 +191,6 @@ body::after {
 					font-weight: 600;
 					color: $font-color;
 				}
-				
-				
-				
 			}
 		}
 		
@@ -230,7 +216,7 @@ body::after {
 			display: flex;
 			flex-direction: column;
 			text-align: center;
-			padding: 0 20px 20px 20px;
+			padding: 0 10px 20px 20px;
 		}
 		
 		.about-section-name h4 {
@@ -252,6 +238,14 @@ body::after {
 				font-family: $other-font;
 				font-style: italic;
 				font-weight: 600;
+				color: $else-color;
+			}
+			
+			.contact-icon {
+				color: $font-color;
+			}
+			
+			.contact-icon:hover {
 				color: $else-color;
 			}
 		}
@@ -359,7 +353,6 @@ body::after {
 		  #event-name h1 {
 			 font-size: 60px; 
 		  }
-		  
 	}
       
       /* Large and up */

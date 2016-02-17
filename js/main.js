@@ -1,6 +1,37 @@
 $(document).ready(function () {
 	'use strict';
 	
+	function resize_background() {
+
+		jQuery("#video1").css("min-height", jQuery(window).height() + "px");
+		
+		var video_width = parseInt(jQuery("#video1").css("width"));
+		
+		var window_width = jQuery(window).width();
+		
+		if(video_width > window_width) {
+			
+			var left_pos = ((video_width - window_width) / 2) * -1;
+			
+			jQuery("#video1").css("left", left_pos + "px");
+			
+		}
+		
+		else {
+			
+			jQuery("#video1").css("left", 0);
+			
+		}
+		
+	}
+	
+	jQuery(window).resize(function() {
+		
+		resize_background();
+	});
+	
+	resize_background();
+	
 		/**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
  *
@@ -24,6 +55,43 @@ $(document).ready(function () {
 		
 	}
 	jQuery(document).foundation();
+	
+	
+	
+	/**<script>
+	function initMap() {
+		var map = new google.maps.Map(document.getElementById('flex-video'), {
+			center: {lat: 20.9621791, lng: 75.5520463},
+			zoom: 16,
+			
+			styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
+		});
+		
+		var infowindow = new google.maps.InfoWindow();
+		var service = new google.maps.places.PlacesService(map);
+		
+		service.getDetails({
+			placeId: 'ChIJlyJa2m0O2TsRBnHFseESEO0'
+		}, function(place, status) {
+			if (status === google.maps.places.PlacesServiceStatus.OK) {
+				var marker = new google.maps.Marker({
+					map: map,
+					position: place.geometry.location
+				});
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+										  'Place ID: ' + place.place_id + '<br>' +
+										  place.formatted_address + '</div>');
+					infowindow.open(map, this);
+				});
+			}
+		});
+	}
+	
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-3vLAdwrilgIe52pOH-oCB99euWxUko&libraries=places&callback=initMap"
+    async defer></script> 
+	**/
 	
 	
 });
