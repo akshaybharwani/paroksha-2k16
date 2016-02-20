@@ -108,6 +108,13 @@ body::after {
     color: #E84545;
     font-family: "Open Sans", sans-serif;
     font-weight: 600; }
+    #event-details .event-info h3 .event-info-a {
+      color: #E84545; }
+    #event-details .event-info h3 .event-info-a:hover {
+      color: #903749;
+      text-decoration: underline; }
+  #event-details .event-info-a:hover {
+    text-decoration: #E84545; }
   #event-details .event-info h3 span {
     font-family: "Axis", sans-serif;
     font-size: 24px;
@@ -118,9 +125,15 @@ body::after {
 
 #events {
   width: auto;
-  height: auto; }
+  height: auto;
+  text-align: center; }
+  #events .event-section-name h4 {
+    font-family: "Axis", sans-serif;
+    color: #E84545;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #903749; }
   #events .events-row-event {
-    width: auto; }
+    max-width: auto; }
     #events .events-row-event .events-row-wrapper {
       display: flex;
       text-align: center;
@@ -188,7 +201,7 @@ body::after {
       display: flex;
       text-align: center;
       flex-direction: column;
-      padding: 0 10px 20px 20px; }
+      padding: 10px 20px 20px 20px; }
     #about #about-row .about-section-name h4 {
       font-family: "Axis", sans-serif;
       color: #E84545;
@@ -242,7 +255,7 @@ body::after {
   body::after {
     height: 5px; }
 
-  .events-row-1 {
+  .event-section-name {
     padding-top: 30px; }
 
   .events-row-wrapper {
@@ -252,7 +265,10 @@ body::after {
     padding-top: 30px; }
 
   #location-map {
-    height: 320px; } }
+    height: 320px; }
+
+  #events {
+    padding: 0 20px; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
   #social-icon {
@@ -273,11 +289,14 @@ body::after {
   .contact-name, .contact-number, .contact-role {
     font-size: 20px; }
 
-  .events-row:first-of-type {
-    padding-top: 60px; }
-
   .events-row-wrapper {
     margin-bottom: 20px; }
+
+  #events-row-1 {
+    padding-top: 60px; }
+
+  .event-section-name {
+    display: none; }
 
   #about-row {
     padding-top: 60px; }
@@ -313,7 +332,10 @@ body::after {
     height: 259px; }
 
   #location-map {
-    height: 445px; } }
+    height: 445px; }
+
+  .events-row-name h3 {
+    font-size: 25px; } }
 /* Large only */
 
 /*# sourceMappingURL=style.css.map */

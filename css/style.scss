@@ -165,6 +165,19 @@ body::after {
 		color: $font-color;
 		font-family: $other-font;
 		font-weight: 600;
+		
+		.event-info-a {
+			color: $font-color;
+		}
+		
+		.event-info-a:hover {
+			color: $else-color;
+			text-decoration: underline;
+		}
+	}
+	
+	.event-info-a:hover {
+		text-decoration: $font-color;
 	}
 	
 	.event-info h3 span {
@@ -182,9 +195,17 @@ body::after {
 #events {
 	width: auto;
 	height: auto;
+	text-align: center;
+	
+	.event-section-name h4 {
+		font-family: $main-font-family;
+		color: $font-color;
+		padding-bottom: 5px;
+		border-bottom: 5px solid $else-color;
+	}
 	
 	.events-row-event {
-		width: auto;
+		max-width: auto;
 		
 		.events-row-wrapper {
 			@include flex-display;
@@ -290,7 +311,7 @@ body::after {
 		
 		.about-section {
 			@include flex-display;
-			padding: 0 10px 20px 20px;
+			padding: 10px 20px 20px 20px;
 		}
 		
 		.about-section-name h4 {
@@ -374,7 +395,7 @@ body::after {
 				height: 5px;
 			}
 		  
-		  .events-row-1 {
+		  .event-section-name {
 			  padding-top: 30px;
 		  }
 		  
@@ -388,6 +409,10 @@ body::after {
 		  
 		  #location-map {
 			  height: 320px;
+		  }
+		  
+		  #events {
+			  padding: 0 20px;
 		  }
 		  
 }
@@ -421,12 +446,16 @@ body::after {
 			  font-size: 20px;
 		  }
 		  
-		  .events-row:first-of-type {
+		  .events-row-wrapper {
+			  margin-bottom: 20px;
+		  }
+		  
+		  #events-row-1 {
 			  padding-top: 60px;
 		  }
 		  
-		  .events-row-wrapper {
-			  margin-bottom: 20px;
+		  .event-section-name {
+			  display: none;
 		  }
 		  
 		  #about-row {
@@ -460,7 +489,6 @@ body::after {
 				margin-left: -5px;
 		  	}
 		  
-		  
 		  	body {
 			border: 20px white solid;
 			}
@@ -480,8 +508,12 @@ body::after {
 		  #location-map {
 			  height: 445px;
 		  }
+		  .events-row-name h3 {
+			  font-size: 25px;
+		  }
 		  
 	}
       
       /* Large only */
-      @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+      @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
