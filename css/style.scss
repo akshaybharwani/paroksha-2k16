@@ -14,10 +14,17 @@ $font-color: #E84545;
 $else-color: #903749;
 $link-hover-color: #570b0b;
 
+@mixin flex-display {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
 
 body {
 	margin: 0;
 	padding: 0;
+	z-index: 2;
+	
 }
 
 body::before {
@@ -88,6 +95,11 @@ body::after {
 
 #home {
 	overflow: hidden;
+	background-image: url(../images/sd7.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 	
 	#social-icon {
 		position: fixed;
@@ -112,6 +124,16 @@ body::after {
 	video {
 		min-height: 100%;
 		min-width: 100%;
+		z-index: -1;
+	}
+	
+	#overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(43, 46, 74, 0.3);
 	}
 	
 }
@@ -122,19 +144,21 @@ body::after {
 
 #event-details {
 	position: absolute;
-	bottom: 5%;
-	margin: 0 20px;
+	bottom: 6%;
+	padding: 0 20px;
+	margin-right: 20px;
 	text-align: left;
 	overflow: hidden;
+	z-index: 1;
 	
 	#event-name {
-		text-align: left;
-		line-height: 1;
-	}	
+		margin-bottom: 5px;
+	}
 	
 	#event-name h1 {
 		font-family: $main-font-family;
 		color: $font-color;
+		line-height: 1;
 	}
 	
 	.event-info h3 {
@@ -163,25 +187,24 @@ body::after {
 		width: auto;
 		
 		.events-row-wrapper {
+			@include flex-display;
 			background-color: white;
-			display: flex;
-			flex-direction: column;
+			position: relative;
 			
 			.events-row-name {
-				text-align: center;
 				flex-grow: 1;
-				
-				.event-row-name-h3 {
-					font-family: $main-font-family;
-					color: $font-color;
-				}
+			}
+			
+			.events-row-name h3, .events-row-reveal-info h3 {
+				font-family: $main-font-family;
+				color: $font-color;
 			}
 			
 			.events-row-image {
 				text-align: center;
 				flex-grow: 1;
 			}
-			
+				
 			.events-row-info {
 				text-align: center;
 				padding-bottom: 7px;
@@ -192,8 +215,61 @@ body::after {
 					color: $font-color;
 				}
 			}
+			
+			.events-row-click {
+				font-family: $other-font;
+				font-weight: 600;
+				padding-bottom: 7px;
+				
+				.events-row-click-a {
+					color: $font-color;
+				}
+				
+				.events-row-click-a:hover {
+					color: $link-hover-color;
+				}
+				
+			}
+			
+			.events-row-reveal {
+				background-color: rgba(232, 69, 69, 0.9);
+				text-align: center;
+				font-family: $other-font;
+				transition: display 200ms ease-in-out;
+				
+				.reveal-category {
+					font-weight: 600;
+					font-style: italic;
+					color: wheat;
+				}
+				
+				.reveal-category-info {
+					color: white;
+				}
+				
+				.reveal-category-info span {
+					color: wheat;
+					font-style: italic;
+				}
+				
+				.reveal-category-link {
+					color: wheat;
+					font-weight: 600;
+				}
+				
+				.reveal-category-link:hover {
+					color: $background-color;
+				}
+				
+				.close-button {
+					color: white;
+				}
+				
+				.events-row-reveal-info h3 {
+					color: white;
+				}
+			}
 		}
-		
 		
 	}
 	
@@ -213,9 +289,7 @@ body::after {
 		max-width: 100%;
 		
 		.about-section {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
+			@include flex-display;
 			padding: 0 10px 20px 20px;
 		}
 		
@@ -250,6 +324,15 @@ body::after {
 			}
 		}
 		
+	}
+	
+	#location-map {
+		max-width: 100%;
+		
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
 	}
 	
 }
@@ -303,6 +386,10 @@ body::after {
 			  padding-top: 30px;
 		  }
 		  
+		  #location-map {
+			  height: 320px;
+		  }
+		  
 }
       
       /* Medium and up */
@@ -346,12 +433,20 @@ body::after {
 			  padding-top: 60px;
 		  }
 		  
+		  .events-row-reveal {
+			  font-size: 20px;
+		  }
+		  
 }
       
       /* Medium only */
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 		  #event-name h1 {
 			 font-size: 60px; 
+		  }
+		  
+		  #location-map {
+			  height: 300px;
 		  }
 	}
       
@@ -381,6 +476,10 @@ body::after {
 		  	.events-row-wrapper {
 			  	height: 259px;
 		 	}
+		  
+		  #location-map {
+			  height: 445px;
+		  }
 		  
 	}
       

@@ -10,12 +10,12 @@
 	<!-- meta tags -->
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="Description" content=" A National Level Technical Event For Polytechnic Students in Jalgaon, Maharashtra India">
+	<meta name="Description" content=" A National Level Technical Event For Polytechnic Students in Jalgaon, Maharashtra, India">
 	<meta name="Keywords" content="techincal event, engineering event, engineering jalgaon, event jalgaon">
 	
 	<!-- meta tags ends -->
 	
-	<!-- stylesheets, keep the 'style.css' always at the last -->
+	<!-- stylesheets, keep the 'style.css' always at the end -->
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -27,20 +27,21 @@
 
 <body>
 	
-	<div id="home" class="section" data-magellan-target="home">  <!-- home section -->
+	<div id="home" class="section" data-magellan-target="home">
 	
 		<a href="https://www.facebook.com/parokshaghriemj" target="_blank">
 			<div id="social-icon">
 				<i class="fa fa-facebook fa-1x social-icon-fa"></i>
 			</div>
-		</a>
+		</a>  <!-- social icon ends -->
 		
-		<video id=”video1” loop autoplay preload=”auto”	>	
-			<source src="./images/02_17_19_52_11.webm" type="video/webm" />
-			<source src="./images/02_17_19_52_11.mp4" type="video/mp4" />
-		</video>
+		<video id=”video1” loop autoplay preload=”auto”>	
+			<source src="./images/video.mp4" type="video/mp4" />
+			<source src="./images/video.mp4" type="video/webm" />
+			<source src="./images/sd7.jpg" title="Your browser doesn't support the <video>">
+		</video>  <!-- video ends -->
 	
-		<div data-sticky-container>  <!-- data sticky container -->
+		<div data-sticky-container> 
     	   <div data-sticky data-sticky-on="small" data-options="marginTop:0.9;" style="width: 100%">
     	     
     	     <div class="top-bar">
@@ -74,7 +75,11 @@
 			</div>
 					
 		</div>	<!-- event details ends -->
+		
+		<div id="overlay">
 			
+		</div>
+		
 	</div>  <!-- home section ends -->	
 	
 	<div class="section-wrapper">
@@ -87,7 +92,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">PROJECT PRESENTATION</h3>
+							<h3>PROJECT PRESENTATION</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -96,9 +101,33 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/Project%20Presentation.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event1">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event1" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>PROJECT PRESENTATION</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info"><span>CAT I: E&amp;TC/E&amp;C/Electronic</span><br>
+									Mohit Sonar: +91-8805516258<br>
+									<span>CAT II: Computer/IT</span><br>
+									Ujjwal Khachane: +91-8446691143<br>
+									<span>CAT III: Mech/Production/Automobile</span><br>
+									Utkarsh Jathar: +91-8698066865<br>
+									<span>CAT IV: Civil</span><br>
+									Rishabh Patil: +91-8446260865<br>
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student (max. 4 members)</p>
+								<a class="reveal-category-link" href="/rules/Project%20Presentation.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div> 
+      					
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -107,7 +136,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">POSTER PRESENTATION</h3>
+							<h3>POSTER PRESENTATION</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -116,9 +145,27 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/Poster%20Presentation.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event2">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event2" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>POSTER PRESENTATION</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Tushar Sonar: +91-9175843109<br>
+     					  		Pravin Lad: +91-9405270115
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student (max. 2 members)</p>
+								<a class="reveal-category-link" href="/rules/Poster%20Presentation.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -127,7 +174,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">ROBO RACE</h3>
+							<h3>ROBO RACE</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -136,9 +183,27 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/Robo%20Race.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event3">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event3" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>ROBO RACE</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Dhaval Makwana: +91-7709775778<br>
+     					  		Prashant Saindane: +91-8698126237
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student (max. 4 members)</p>
+								<a class="reveal-category-link" href="/rules/Robo%20Race.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -147,7 +212,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">TOWN PLANNING</h3>
+							<h3>TOWN PLANNING</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -156,22 +221,40 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="#">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event4">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event4" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>TOWN PLANNING</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Kalpesh Kudal: +91-9403386804<br>
+     					  		Mayur Mahajan: +91-8446534010
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student (max. 2 members)</p>
+								<a class="reveal-category-link" href="/rules/Town%20Planning.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
 				
 			</div> <!-- event-row ends -->
 			
-			<div class="events-row row events-row-2" data-equalizer data-equalize-on="large">
+			<div class="events-row row events-row-2">
 				
 				<div class="large-3 medium-6 small-12 column events-row-event">
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">CIRCUIT MANIA</h3>
+							<h3>CIRCUIT MANIA</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -180,9 +263,27 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/Circuit%20Mania.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event5">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event5" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>CIRCUIT MANIA</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Jignesh Patil: +91-966559940<br>
+     					  		Rahul Bagal: +91-7709478707
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student</p>
+								<a class="reveal-category-link" href="/rules/Circuit%20Mania.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -191,7 +292,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">MECHA-GRAPHICS</h3>
+							<h3>MECHA-GRAPHICS</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -200,9 +301,27 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/Mechagraphics.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event6">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event6" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>MECHA-GRAPHICS</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Swapnil Wandhare: +91-8308634357<br>
+     					  		Bhatu Borane: +91-9881942480
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student</p>
+								<a class="reveal-category-link" href="/rules/Mechagraphics.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -211,7 +330,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">C Quiz</h3>
+							<h3>C Quiz</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -220,9 +339,27 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/C%20Quiz.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event7">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event7" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>C Quiz</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Prashant Sulakshane: +91-9970155682<br>
+     					  		Balkrishna Rane: +91-8888580937
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student</p>
+								<a class="reveal-category-link" href="/rules/C%20Quiz.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -231,7 +368,7 @@
 					
 					<div class="events-row-wrapper">
 						<div class="events-row-name text-center">
-							<h3 class="event-row-name-h3">NFS Most Wanted</h3>
+							<h3>NFS Most Wanted</h3>
 						</div>
 						
 						<div class="events-row-image">
@@ -240,9 +377,27 @@
 							</h4>
 						</div>
 						
-						<div class="events-row-info">
-							<a class="events-row-info-a" href="/rules/NFS%20Most%20Wanted.docx">Download Event's Info</a>
+						<div class="events-row-click">
+							<a class="events-row-click-a" data-open="event8">CLICK FOR MORE INFO</a>
 						</div>
+						
+						<div class="reveal events-row-reveal" id="event8" data-reveal>
+     					  	<div class="events-row-reveal-info">
+     					  		<h3>NFS Most Wanted</h3>
+     					  		<p class="reveal-category">Coordinators:</p>
+     					  		<p class="reveal-category-info">
+     					  		Mukesh Shewale: +91-8793146735<br>
+     					  		Bhagwat Jadhav: +91-8605124585
+								</p>
+     					  		<p class="reveal-category">Fees:</p>
+     					  		<p class="reveal-category-info">Rs. 50 /- per student</p>
+								<a class="reveal-category-link" href="/rules/NFS%20Most%20Wanted.docx">Download Event's Info</a>
+     					  	</div>
+     					  
+      					  <button class="close-button" data-close aria-label="Close modal" type="button">
+      					    <span aria-hidden="true">&times;</span>
+      					  </button>
+      					</div>
 					</div>
 					
 				</div> <!-- events-row-event ends -->
@@ -285,8 +440,9 @@
 					<div id="location" class="about-section">
 						
 						<div class="about-section-name"><h4>LOCATION</h4></div>
-						<div class="flex-video">
-							<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=g%20h%20raisoni%20instiute%20of%20engineering%20and%20man&key=AIzaSyDB-oN5o1OuU5NC8rI3SR1UWLRhPa9Ep1Y" allowfullscreen></iframe>
+						
+						<div id="location-map">
+							<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=g%20h%20raisoni%20instiute%20of%20engineering%20and%20man&key=AIzaSyDB-oN5o1OuU5NC8rI3SR1UWLRhPa9Ep1Y" allowfullscreen></iframe>
 						</div>
 						
 					</div> <!-- location about sction ends -->
