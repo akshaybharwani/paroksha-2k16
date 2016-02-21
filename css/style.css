@@ -56,10 +56,6 @@ body::after {
 
 #home {
   overflow: hidden;
-  background-image: url(../images/sd7.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative; }
   #home #social-icon {
     position: fixed;
@@ -332,10 +328,10 @@ body::after {
     height: 259px; }
 
   #location-map {
-    height: 445px; }
-
-  .events-row-name h3 {
-    font-size: 25px; } }
+    height: 445px; } }
 /* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .events-row-name h3 {
+    font-size: 26px; } }
 
 /*# sourceMappingURL=style.css.map */
