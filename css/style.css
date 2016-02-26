@@ -81,10 +81,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(43, 46, 74, 0.3); }
-
-.section-row {
-  margin-top: 20px; }
+    background-color: rgba(43, 46, 74, 0.5); }
 
 #event-details {
   position: absolute;
@@ -95,7 +92,7 @@ body::after {
   overflow: hidden;
   z-index: 1; }
   #event-details #event-name {
-    margin-bottom: 5px; }
+    margin-bottom: -10px; }
   #event-details #event-name h1 {
     font-family: "Axis", sans-serif;
     color: #E84545;
@@ -109,6 +106,11 @@ body::after {
     #event-details .event-info h3 .event-info-a:hover {
       color: #903749;
       text-decoration: underline; }
+  #event-details .orbit {
+    margin: 0; }
+  #event-details .orbit-container li.orbit-slide h3 {
+    color: white;
+    font-weight: 400; }
   #event-details .event-info-a:hover {
     text-decoration: #E84545; }
   #event-details .event-info h3 span {

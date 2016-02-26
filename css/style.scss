@@ -129,13 +129,9 @@ body::after {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(43, 46, 74, 0.3);
+		background-color: rgba(43, 46, 74, 0.5);
 	}
 	
-}
-
-.section-row {
-	margin-top: 20px;
 }
 
 #event-details {
@@ -148,7 +144,7 @@ body::after {
 	z-index: 1;
 	
 	#event-name {
-		margin-bottom: 5px;
+		margin-bottom: -10px;
 	}
 	
 	#event-name h1 {
@@ -170,6 +166,18 @@ body::after {
 			color: $else-color;
 			text-decoration: underline;
 		}
+	}
+	
+	.event-info-tagline {
+	}
+	
+	.orbit {
+		margin: 0;
+	}
+		
+	.orbit-container li.orbit-slide h3{
+		color: white;
+		font-weight: 400;
 	}
 	
 	.event-info-a:hover {
