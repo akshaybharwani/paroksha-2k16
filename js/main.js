@@ -47,7 +47,7 @@ $(document).ready(function () {
 		
 		$(function () {
         $('.title-link').on('click', function () {
-
+			
             $("#responsive-menu").css({"display": "none"});
 			
         });

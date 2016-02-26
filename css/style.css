@@ -56,10 +56,6 @@ body::after {
 
 #home {
   overflow: hidden;
-  background-image: url(../images/sd7.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative; }
   #home #social-icon {
     position: fixed;
@@ -85,10 +81,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(43, 46, 74, 0.3); }
-
-.section-row {
-  margin-top: 20px; }
+    background-color: rgba(43, 46, 74, 0.5); }
 
 #event-details {
   position: absolute;
@@ -99,7 +92,7 @@ body::after {
   overflow: hidden;
   z-index: 1; }
   #event-details #event-name {
-    margin-bottom: 5px; }
+    margin-bottom: -10px; }
   #event-details #event-name h1 {
     font-family: "Axis", sans-serif;
     color: #E84545;
@@ -108,6 +101,18 @@ body::after {
     color: #E84545;
     font-family: "Open Sans", sans-serif;
     font-weight: 600; }
+    #event-details .event-info h3 .event-info-a {
+      color: #E84545; }
+    #event-details .event-info h3 .event-info-a:hover {
+      color: #903749;
+      text-decoration: underline; }
+  #event-details .orbit {
+    margin: 0; }
+  #event-details .orbit-container li.orbit-slide h3 {
+    color: white;
+    font-weight: 400; }
+  #event-details .event-info-a:hover {
+    text-decoration: #E84545; }
   #event-details .event-info h3 span {
     font-family: "Axis", sans-serif;
     font-size: 24px;
@@ -118,9 +123,15 @@ body::after {
 
 #events {
   width: auto;
-  height: auto; }
+  height: auto;
+  text-align: center; }
+  #events .event-section-name h4 {
+    font-family: "Axis", sans-serif;
+    color: #E84545;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #903749; }
   #events .events-row-event {
-    width: auto; }
+    max-width: auto; }
     #events .events-row-event .events-row-wrapper {
       display: flex;
       text-align: center;
@@ -188,7 +199,7 @@ body::after {
       display: flex;
       text-align: center;
       flex-direction: column;
-      padding: 0 10px 20px 20px; }
+      padding: 10px 20px 20px 20px; }
     #about #about-row .about-section-name h4 {
       font-family: "Axis", sans-serif;
       color: #E84545;
@@ -242,7 +253,7 @@ body::after {
   body::after {
     height: 5px; }
 
-  .events-row-1 {
+  .event-section-name {
     padding-top: 30px; }
 
   .events-row-wrapper {
@@ -252,7 +263,10 @@ body::after {
     padding-top: 30px; }
 
   #location-map {
-    height: 320px; } }
+    height: 320px; }
+
+  #events {
+    padding: 0 20px; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
   #social-icon {
@@ -273,11 +287,14 @@ body::after {
   .contact-name, .contact-number, .contact-role {
     font-size: 20px; }
 
-  .events-row:first-of-type {
-    padding-top: 60px; }
-
   .events-row-wrapper {
     margin-bottom: 20px; }
+
+  #events-row-1 {
+    padding-top: 60px; }
+
+  .event-section-name {
+    display: none; }
 
   #about-row {
     padding-top: 60px; }
@@ -315,5 +332,8 @@ body::after {
   #location-map {
     height: 445px; } }
 /* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .events-row-name h3 {
+    font-size: 26px; } }
 
 /*# sourceMappingURL=style.css.map */
