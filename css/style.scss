@@ -24,7 +24,6 @@ body {
 	margin: 0;
 	padding: 0;
 	z-index: 2;
-	
 }
 
 body::before {
@@ -309,21 +308,9 @@ body::after {
 	width: auto;
 	height: auto;
 	
-	#about-row {
+	.about-row {
 		margin: 20px 0;
 		max-width: 100%;
-		
-		.about-section {
-			@include flex-display;
-			padding: 10px 20px 20px 20px;
-		}
-		
-		.about-section-name h4 {
-			font-family: $main-font-family;
-			color: $font-color;
-			padding-bottom: 5px;
-			border-bottom: 5px solid $else-color;
-		}
 		
 		.contact-info {
 			margin-bottom: 10px;
@@ -360,6 +347,22 @@ body::after {
 		}
 	}
 	
+	#sponsor {
+		max-width: 100%;
+	}
+	
+}
+
+.about-section {
+	@include flex-display;
+	padding: 10px 20px 20px 20px;
+}
+
+.about-section-name h4 {
+	font-family: $main-font-family;
+	color: $font-color;
+	padding-bottom: 5px;
+	border-bottom: 5px solid $else-color;
 }
 
 .menu-icon.dark {
@@ -407,7 +410,7 @@ body::after {
 			  margin-top: 20px;
 		  }
 		  
-		  #about-row {
+		  #about {
 			  padding-top: 30px;
 		  }
 		  
@@ -417,6 +420,11 @@ body::after {
 		  
 		  #events {
 			  padding: 0 20px;
+		  }
+		  
+		  .about-section img {
+			  height: 100px;
+			  width: 100px;
 		  }
 		  
 }
@@ -462,7 +470,7 @@ body::after {
 			  display: none;
 		  }
 		  
-		  #about-row {
+		  #about {
 			  padding-top: 60px;
 		  }
 		  
@@ -480,6 +488,11 @@ body::after {
 		  
 		  #location-map {
 			  height: 300px;
+		  }
+		  
+		  .about-section img {
+			  height: 150px;
+			  width: 150px;
 		  }
 	}
       
@@ -509,9 +522,14 @@ body::after {
 			  	height: 259px;
 		 	}
 		  
-		  #location-map {
-			  height: 445px;
-		  }
+		  	#location-map {
+				height: 445px;
+		  	}
+		  
+		  	.about-section img {
+			  	height: 225px;
+				width: 225px;
+		  	}
 		  
 	}
       
