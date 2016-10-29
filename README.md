@@ -1,5 +1,5 @@
 ## Paroksha-2k16
-### http://paroksha.ghriemj.com / https://akshaybharwani.github.io/paroksha-2k16/
+### http://paroksha.ghriemj.com / https://akshaybharwani.github.io/paroksha-2k16
 Paroksha 2k16 - Official Website of the annual Technical Event at GHRIEM, Jalgaon
 
 #### Built using:
