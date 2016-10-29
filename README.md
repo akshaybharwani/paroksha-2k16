@@ -1,5 +1,5 @@
 ## Paroksha-2k16
-### http://paroksha.ghriemj.com
+### http://paroksha.ghriemj.com / https://akshaybharwani.github.io/paroksha-2k16/
 Paroksha 2k16 - Official Website of the annual Technical Event at GHRIEM, Jalgaon
 
 #### Built using:
@@ -8,3 +8,5 @@ Paroksha 2k16 - Official Website of the annual Technical Event at GHRIEM, Jalgao
 3. SASS: http://sass-lang.com
 4. jQuery: http://jquery.com
 5. Handbrake: http://handbrake.fr
+
+**If you find any problems, either raise an issue or email me at akshaybharwani@gmail.com**
